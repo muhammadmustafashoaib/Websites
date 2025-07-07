@@ -11,6 +11,7 @@ import { ServicesComponent } from './services/services.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeroComponent } from './hero/hero.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -34,7 +35,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)  // 👈 this is key
+    RouterModule.forChild(routes),  // 👈 this is key
+    ReactiveFormsModule
   ]
 })
 export class Website1Module { }

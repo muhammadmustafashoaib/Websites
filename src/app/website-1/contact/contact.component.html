@@ -1,11 +1,55 @@
-<section id="contact">
-  <div class="container">
-    <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" />
-      <input type="email" placeholder="Your Email" />
-      <textarea placeholder="Your Message"></textarea>
-      <button>Send</button>
+<section id="contact" class="py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+  <div class="max-w-xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 flex items-center gap-2 animate-fadeInUp">
+      <i class="fa-solid fa-envelope text-sky-400"></i> Contact Us
+    </h2>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()"
+          class="space-y-6 bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg animate-slideInUp">
+      
+      <div>
+        <input 
+          formControlName="name"
+          type="text"
+          placeholder="Your Name"
+          class="w-full p-3 rounded-xl text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400"
+        />
+        <small *ngIf="name?.invalid && (name?.touched || submitted)" class="text-red-400">
+          Name is required.
+        </small>
+      </div>
+
+      <div>
+        <input 
+          formControlName="email"
+          type="email"
+          placeholder="Your Email"
+          class="w-full p-3 rounded-xl text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400"
+        />
+        <small *ngIf="email?.invalid && (email?.touched || submitted)" class="text-red-400">
+          Valid email is required.
+        </small>
+      </div>
+
+      <div>
+        <textarea 
+          formControlName="message"
+          rows="4"
+          placeholder="Your Message"
+          class="w-full p-3 rounded-xl text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400"
+        ></textarea>
+        <small *ngIf="message?.invalid && (message?.touched || submitted)" class="text-red-400">
+          Message is required.
+        </small>
+      </div>
+
+      <button 
+        [disabled]="contactForm.invalid" 
+        type="submit" 
+        class="w-full py-3 rounded-xl bg-sky-500 hover:bg-sky-600 transition duration-300 font-semibold animate-pulse"
+      >
+        Send
+      </button>
     </form>
   </div>
 </section>
