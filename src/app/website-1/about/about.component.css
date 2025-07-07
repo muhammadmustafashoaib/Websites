@@ -1,0 +1,10 @@
+#about {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: zoomIn 0.8s ease forwards;
+}
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

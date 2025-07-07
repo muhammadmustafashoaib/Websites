@@ -1,0 +1,20 @@
+#services {
+  background: #fff;
+  padding: 4rem 2rem;
+}
+#services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+#services .grid div {
+  background: #e0f7fa;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+#services .grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

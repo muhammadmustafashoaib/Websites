@@ -1,0 +1,13 @@
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+footer i {
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from { color: #00c7b7; }
+  to { color: #fff; }
+}
