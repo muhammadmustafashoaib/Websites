@@ -1,24 +1,59 @@
-<section class="hero">
-  <div class="container">
-    <!-- Left: Text & Features -->
-    <div class="content">
-      <h1>
-        Professional Plumbing <i class="fa-solid fa-wrench"></i>
+<section class="relative bg-slate-950 text-white overflow-hidden">
+  <!-- Background Gradient Shape -->
+  <div class="absolute -top-32 -left-32 w-[500px] h-[500px] bg-gradient-to-tr from-sky-500/20 to-transparent rounded-full blur-3xl animate-spin-slow"></div>
+  <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-gradient-to-tr from-sky-700/20 to-transparent rounded-full blur-3xl animate-spin-slow"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+    <!-- Text -->
+    <div class="flex flex-col justify-center space-y-6 animate-fadeInUp">
+      <span class="px-3 py-1 bg-sky-600/20 text-sky-400 rounded-full text-sm w-fit">Trusted Plumbing Experts</span>
+
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-cyan-300">
+          Professional Plumbing,
+        </span>
+        Done Right.
       </h1>
-      <p>
-        Fast, affordable & reliable plumbing for your home & business needs.
+
+      <p class="text-lg text-gray-300 max-w-md">
+        Serving homes & businesses with fast, transparent, and reliable plumbing solutions — anytime, anywhere.
       </p>
-      <ul class="features">
-        <li><i class="fa-solid fa-check-circle"></i> 24/7 Emergency Support</li>
-        <li><i class="fa-solid fa-check-circle"></i> Licensed & Insured Technicians</li>
-        <li><i class="fa-solid fa-check-circle"></i> Upfront Pricing, No Surprises</li>
+
+      <div class="flex gap-4 mt-4">
+        <a href="#contact"
+          class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-600 transition font-semibold shadow-xl">
+          Get a Free Estimate
+        </a>
+        <a href="#about"
+          class="px-6 py-3 rounded-xl border border-sky-500 text-sky-400 hover:bg-sky-500/10 transition font-semibold">
+          Learn More
+        </a>
+      </div>
+
+      <ul class="space-y-2 mt-6 text-sm text-gray-400">
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check-circle text-sky-400"></i> 24/7 Emergency Support
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check-circle text-sky-400"></i> Fully Licensed & Insured
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check-circle text-sky-400"></i> No Hidden Charges
+        </li>
       </ul>
-      <button class="cta">Get Free Estimate</button>
     </div>
 
-    <!-- Right: Hero Image -->
-    <div class="hero-image">
-      <img src="https://plus.unsplash.com/premium_photo-1664298589198-b15ff5382648?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plumber at work" />
+    <!-- Image -->
+    <div class="flex justify-center animate-slideInRight">
+      <div
+        class="relative w-full max-w-md bg-gradient-to-br from-sky-700/30 to-sky-900/10 backdrop-blur-md rounded-3xl p-2 shadow-2xl">
+        <img src="https://plus.unsplash.com/premium_photo-1664298589198-b15ff5382648?q=80&w=1170&auto=format&fit=crop"
+          alt="Plumber at work" class="rounded-2xl w-full">
+        <div
+          class="absolute -top-6 -right-6 bg-sky-500 text-white px-4 py-2 rounded-xl shadow-lg text-xs animate-bounce">
+          🚰 Same-day Service
+        </div>
+      </div>
     </div>
   </div>
 </section>

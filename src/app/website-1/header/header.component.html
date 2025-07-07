@@ -1,33 +1,17 @@
-<header>
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="left">
-        <i class="fa-solid fa-phone"></i> +1 (555) 123‑4567
-        <span>|</span>
-        <i class="fa-solid fa-clock"></i> Mon–Sat: 8am – 8pm
-      </div>
-      <div class="right">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-    </div>
-  </div>
+<header class="bg-slate-900 text-white fixed w-full z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16 animate-slideInDown">
+    <div class="text-xl font-bold text-sky-400">MyWebsite</div>
 
-  <!-- Main Navigation -->
-  <div class="main-nav container">
-    <div class="logo">
-      <i class="fa-solid fa-faucet"></i> <span>PlumbingPro</span>
-    </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
+    <nav class="space-x-6 hidden md:flex">
+      <a href="#home" class="hover:text-sky-400 transition">Home</a>
+      <a href="#about" class="hover:text-sky-400 transition">About</a>
+      <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
     </nav>
-    <button class="cta">Get Free Quote</button>
+
+    <button class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </div>
 </header>
