@@ -1,7 +1,7 @@
 <div class="min-h-screen flex flex-col">
   <nav class="bg-blue-600 text-white p-4">
     <div class="flex items-center justify-between">
-      <div class="flex items-center gap-2 text-xl font-bold">
+      <div class="flex items-center  text-xl font-bold">
         Plumbing Co
         <img src="https://www.svgrepo.com/show/1976/plumber.svg" class="w-6 h-6" alt="logo" />
       </div>
@@ -18,13 +18,13 @@
 
     <!-- Menu Links -->
     <div
-      class="flex-col items-center space-y-2 md:space-y-0 md:flex md:flex-row md:justify-center md:space-x-6 text-center"
+      class="flex-col no-underline items-center space-y-2 md:space-y-0 md:flex md:flex-row md:justify-center md:space-x-6 text-center"
       [ngClass]="{ 'hidden': !isMenuOpen, 'flex': isMenuOpen, 'md:flex': true }">
-      <a routerLink="/" class="hover:underline">Home</a>
-      <a routerLink="/services" class="hover:underline">Services</a>
-      <a routerLink="/about" class="hover:underline">About</a>
-      <a routerLink="/contact" class="hover:underline">Contact</a>
-      <a routerLink="/faq" class="hover:underline">FAQ</a>
+      <a routerLink="/" class="hover">Home</a>
+      <a routerLink="/services" class="hover:">Services</a>
+      <a routerLink="/about" class="">About</a>
+      <a routerLink="/contact" class="hover">Contact</a>
+      <a routerLink="/faq" class="hover">FAQ</a>
     </div>
   </nav>
 
