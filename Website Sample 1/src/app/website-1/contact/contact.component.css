@@ -1,28 +1,145 @@
-#contact {
-  background: #e3f2fd;
-  padding: 4rem 2rem;
-  animation: slideIn 0.8s ease forwards;
+.contact-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
 }
-form {
-  max-width: 500px;
-  margin: 0 auto;
+
+.contact-container {
+  max-width: 1100px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card,
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover,
+.contact-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+.form-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 2px #38bdf8;
+}
+
+small {
+  display: block;
+  color: #f87171;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 0.75rem;
+  background: #38bdf8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+.contact-info-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: left;
   gap: 1rem;
+  font-size: 1rem;
+  color: #cbd5e1;
 }
-form input, form textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
+.contact-info-card i {
+  color: #38bdf8;
+  margin-right: 0.5rem;
 }
-form button {
-  background: #0077b6;
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 4px;
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
-@keyframes slideIn {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

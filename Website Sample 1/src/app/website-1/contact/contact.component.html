@@ -1,55 +1,67 @@
-<section id="contact" class="py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
-  <div class="max-w-xl mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-2 animate-fadeInUp">
-      <i class="fa-solid fa-envelope text-sky-400"></i> Contact Us
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>
+      <i class="fa-solid fa-envelope"></i> Contact Us
     </h2>
 
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()"
-          class="space-y-6 bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-lg animate-slideInUp">
-      
-      <div>
-        <input 
-          formControlName="name"
-          type="text"
-          placeholder="Your Name"
-          class="w-full p-3 rounded-xl text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400"
-        />
-        <small *ngIf="name?.invalid && (name?.touched || submitted)" class="text-red-400">
-          Name is required.
-        </small>
-      </div>
-
-      <div>
-        <input 
-          formControlName="email"
-          type="email"
-          placeholder="Your Email"
-          class="w-full p-3 rounded-xl text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400"
-        />
-        <small *ngIf="email?.invalid && (email?.touched || submitted)" class="text-red-400">
-          Valid email is required.
-        </small>
-      </div>
-
-      <div>
-        <textarea 
-          formControlName="message"
-          rows="4"
-          placeholder="Your Message"
-          class="w-full p-3 rounded-xl text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400"
-        ></textarea>
-        <small *ngIf="message?.invalid && (message?.touched || submitted)" class="text-red-400">
-          Message is required.
-        </small>
-      </div>
-
-      <button 
-        [disabled]="contactForm.invalid" 
-        type="submit" 
-        class="w-full py-3 rounded-xl bg-sky-500 hover:bg-sky-600 transition duration-300 font-semibold animate-pulse"
+    <div class="contact-grid">
+      <!-- Left: Contact Form -->
+      <form
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+        class="contact-card"
       >
-        Send
-      </button>
-    </form>
+        <div class="form-group">
+          <input
+            formControlName="name"
+            type="text"
+            placeholder="Your Name"
+            class="form-input"
+          />
+          <small *ngIf="name?.invalid && (name?.touched || submitted)">
+            Name is required.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <input
+            formControlName="email"
+            type="email"
+            placeholder="Your Email"
+            class="form-input"
+          />
+          <small *ngIf="email?.invalid && (email?.touched || submitted)">
+            Valid email is required.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            formControlName="message"
+            rows="4"
+            placeholder="Your Message"
+            class="form-input"
+          ></textarea>
+          <small *ngIf="message?.invalid && (message?.touched || submitted)">
+            Message is required.
+          </small>
+        </div>
+
+        <button
+          [disabled]="contactForm.invalid"
+          type="submit"
+          class="submit-btn"
+        >
+          Send
+        </button>
+      </form>
+
+      <!-- Right: Contact Info -->
+      <div class="contact-info-card">
+        <p><i class="fa-solid fa-phone"></i> 123-1234-1234</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> XYZ, New York</p>
+        <p><i class="fa-solid fa-envelope"></i> abc&#64;gmail.com</p>
+      </div>
+    </div>
   </div>
 </section>
