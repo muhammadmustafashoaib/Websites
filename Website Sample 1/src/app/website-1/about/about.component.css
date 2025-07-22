@@ -1,10 +1,75 @@
-#about {
-  background: #f9f9f9;
-  padding: 4rem 2rem;
-  text-align: center;
-  animation: zoomIn 0.8s ease forwards;
+.about-section {
+  background: #0d1117;
+  color: #f0f6fc;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1%;
 }
-@keyframes zoomIn {
-  from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+
+.about-container {
+  max-width: 900px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(56, 189, 248, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 150px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.highlight i {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.highlight span {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.highlight:hover {
+  transform: translateY(-4px);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
