@@ -1,17 +1,39 @@
-<header class="bg-slate-900 text-white fixed w-full z-50 shadow-md">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16 animate-slideInDown">
-    <div class="text-xl font-bold text-sky-400">MyWebsite</div>
+<header class="header">
+  <div class="container">
+    <div class="logo">Plumbing Pro</div>
 
-    <nav class="space-x-6 hidden md:flex">
-      <a href="#home" class="hover:text-sky-400 transition">Home</a>
-      <a href="#about" class="hover:text-sky-400 transition">About</a>
-      <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/team">Team</a></li>
+            <li><a routerLink="/careers">Careers</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li>
+          <input type="text" placeholder="Search…" />
+        </li>
+        <li>
+          <a routerLink="/quote" class="cta">Get a Quote</a>
+        </li>
+      
+      </ul>
     </nav>
 
-    <button class="md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <button class="hamburger" (click)="toggleMobileMenu()">
+      ☰
     </button>
+  </div>
+
+  <div class="mobile-nav" [class.show]="mobileMenuOpen">
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/services">Services</a>
+    <a routerLink="/contact">Contact</a>
+    <a routerLink="/quote">Get a Quote</a>
   </div>
 </header>
