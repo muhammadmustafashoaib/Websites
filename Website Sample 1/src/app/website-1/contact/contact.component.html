@@ -1,48 +1,48 @@
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    <h2>
-      <i class="fa-solid fa-envelope"></i> Contact Us
+<section id="contact" class="contact-section bg-blue-50 py-16 relative overflow-hidden">
+  <div class="contact-container max-w-4xl mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-blue-800 mb-8 flex items-center gap-2">
+      <i class="fa-solid fa-faucet-drip text-blue-600"></i> Contact Us
     </h2>
 
-    <div class="contact-grid">
+    <div class="contact-grid grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Left: Contact Form -->
       <form
         [formGroup]="contactForm"
         (ngSubmit)="onSubmit()"
-        class="contact-card"
+        class="contact-card bg-white rounded-xl shadow-md p-6 border border-blue-100"
       >
-        <div class="form-group">
+        <div class="form-group mb-4 relative">
           <input
             formControlName="name"
             type="text"
             placeholder="Your Name"
-            class="form-input"
+            class="form-input pl-25 w-full py-2 rounded border border-gray-300 focus:border-blue-300 focus:ring-1 focus:ring-blue-200"
           />
-          <small *ngIf="name?.invalid && (name?.touched || submitted)">
+          <small *ngIf="name?.invalid && (name?.touched || submitted)" class="text-red-500 text-sm">
             Name is required.
           </small>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mb-4 relative">
           <input
             formControlName="email"
             type="email"
             placeholder="Your Email"
-            class="form-input"
+            class="form-input pl-12 w-full py-2 rounded border border-gray-300 focus:border-blue-300 focus:ring-1 focus:ring-blue-200"
           />
-          <small *ngIf="email?.invalid && (email?.touched || submitted)">
+          <small *ngIf="email?.invalid && (email?.touched || submitted)" class="text-red-500 text-sm">
             Valid email is required.
           </small>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mb-4 relative">
           <textarea
             formControlName="message"
             rows="4"
             placeholder="Your Message"
-            class="form-input"
+            class="form-input pl-12 pt-2 w-full rounded border border-gray-300 focus:border-blue-300 focus:ring-1 focus:ring-blue-200"
           ></textarea>
-          <small *ngIf="message?.invalid && (message?.touched || submitted)">
+          <small *ngIf="message?.invalid && (message?.touched || submitted)" class="text-red-500 text-sm">
             Message is required.
           </small>
         </div>
@@ -50,18 +50,28 @@
         <button
           [disabled]="contactForm.invalid"
           type="submit"
-          class="submit-btn"
+          class="submit-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
         >
-          Send
+        Send
         </button>
       </form>
 
       <!-- Right: Contact Info -->
-      <div class="contact-info-card">
-        <p><i class="fa-solid fa-phone"></i> 123-1234-1234</p>
-        <p><i class="fa-solid fa-map-marker-alt"></i> XYZ, New York</p>
-        <p><i class="fa-solid fa-envelope"></i> abc&#64;gmail.com</p>
+      <div class="contact-info-card bg-white rounded-xl shadow-inner p-6 border-l-4 border-blue-200">
+        <p class="mb-3 text-blue-700"><i class="fa-solid fa-phone text-blue-500"></i> 123-1234-1234</p>
+        <p class="mb-3 text-blue-700"><i class="fa-solid fa-map-marker-alt text-blue-500"></i> XYZ, New York</p>
+        <p class="mb-3 text-blue-700"><i class="fa-solid fa-envelope text-blue-500"></i> abc&#64;gmail.com</p>
       </div>
     </div>
+  </div>
+
+  <!-- Decorative Plumbing Effects -->
+  <div class="absolute top-0 left-0 w-16 h-16 bg-blue-100 rounded-full opacity-20 animate-ping"></div>
+  <div class="absolute bottom-0 right-0 w-24 h-24 bg-blue-100 rounded-full opacity-10 animate-pulse"></div>
+  <div class="absolute top-10 right-10 text-5xl text-blue-100 opacity-20 rotate-12 pointer-events-none">
+    <i class="fa-solid fa-pipe"></i>
+  </div>
+  <div class="absolute bottom-10 left-10 text-5xl text-blue-100 opacity-20 -rotate-12 pointer-events-none">
+    <i class="fa-solid fa-droplet"></i>
   </div>
 </section>
