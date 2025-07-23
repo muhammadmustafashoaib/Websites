@@ -1,36 +1,48 @@
-<section class="hero">
-  <div class="shape shape-1"></div>
-  <div class="shape shape-2"></div>
+<section class="hero py-20 bg-white relative overflow-hidden">
+  <!-- Decorative Faint Texture -->
+  <div class="absolute inset-0 opacity-5 bg-[url('/images/tiles-pattern.svg')] bg-repeat"></div>
 
-  <div class="content">
-    <div class="text fade-in">
-      <span class="tagline">Trusted Plumbing Experts</span>
+  <div class="content max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[55%_45%] gap-12 items-center relative z-10">
+    <!-- Left: Text -->
+    <div class="text space-y-6">
+      <span class="tagline inline-flex items-center gap-2 text-sm uppercase tracking-widest text-blue-700 font-semibold">
+        <i class="fa-solid fa-wrench text-blue-600"></i> Trusted Plumbing Experts
+      </span>
 
-      <h1>
-        <span class="gradient-text">Plumbing</span> Done Right.
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight text-blue-900">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+          Plumbing
+        </span> Done Right, Every Time.
       </h1>
 
-      <p>
-        Fast, transparent & reliable plumbing solutions for your home or business — delivered with care, 24/7.
+      <p class="text-gray-700 text-lg max-w-prose">
+        From leaky faucets to complete pipe installations, we deliver fast, affordable, and reliable plumbing services to homes and businesses — available 24/7.
       </p>
 
-      <div class="actions">
-        <a href="#contact" class="btn-primary">Get a Free Estimate</a>
-        <a href="#about" class="btn-secondary">Learn More</a>
+      <div class="actions flex flex-wrap gap-4 mt-6">
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700">
+          <i class="fa-solid fa-phone"></i> Get a Free Estimate
+        </a>
+        <a href="#about" class="border border-blue-600 text-blue-600 px-6 py-3 rounded hover:bg-blue-100">
+          Learn More
+        </a>
       </div>
 
-      <ul class="features">
-        <li>✔ 24/7 Emergency Support</li>
-        <li>✔ Licensed & Insured</li>
-        <li>✔ Transparent Pricing</li>
+      <ul class="features mt-6 space-y-1 text-gray-700">
+        <li><i class="fa-solid fa-check text-green-500"></i> 24/7 Emergency Plumbing</li>
+        <li><i class="fa-solid fa-check text-green-500"></i> Licensed & Insured Professionals</li>
+        <li><i class="fa-solid fa-check text-green-500"></i> Transparent, Upfront Pricing</li>
       </ul>
     </div>
 
-    <div class="image fade-in-up">
-      <div class="image-wrapper" style="width: 120%;">
+    <!-- Right: Image -->
+    <div class="image flex justify-center md:justify-end">
+      <div class="image-wrapper w-full max-w-md md:max-w-xl shadow-xl rounded overflow-hidden relative">
         <img
-          src="https://plus.unsplash.com/premium_photo-1664298589198-b15ff5382648?q=80&w=1170&auto=format&fit=crop"
-          alt="Plumber at work" />
+          src="https://images.pexels.com/photos/7622563/pexels-photo-7622563.jpeg?_gl=1*ywx13v*_ga*MTIxOTk4Mjg4My4xNzUyODMyMjU3*_ga_8JE65Q40S6*czE3NTMyNTMyNDQkbzIkZzEkdDE3NTMyNTMyOTQkajEwJGwwJGgw"
+          alt="Plumber at work"
+          class="w-full h-auto object-cover"
+        />
       </div>
     </div>
   </div>
