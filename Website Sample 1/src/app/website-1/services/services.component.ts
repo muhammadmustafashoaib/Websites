@@ -1,5 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+interface Service {
+  readonly title: string;
+  readonly description: string;
+  readonly image: string;
+}
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -8,7 +13,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 })
 export class ServicesComponent {
- services = [
+   readonly services: ReadonlyArray<Service> = [
     {
       title: 'Emergency Repairs',
       description: 'Available 24/7 for urgent leaks, bursts, and breakdowns.',
@@ -54,5 +59,5 @@ export class ServicesComponent {
       description: 'We replace old, damaged, or corroded pipes with durable materials.',
       image: 'https://images.pexels.com/photos/12880833/pexels-photo-12880833.jpeg'
     }
-  ];
+  ];;
 }

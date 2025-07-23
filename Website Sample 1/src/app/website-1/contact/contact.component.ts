@@ -14,12 +14,24 @@ export class ContactComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
-    this.contactForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
-    });
+  this.contactForm = this.fb.group({
+  name: ['', Validators.required],
+  email: ['', [Validators.required, Validators.email]],
+  service: ['', Validators.required],
+  message: ['', Validators.required]
+});
   }
+  servicesList = [
+  'Emergency Repairs',
+  'Water Heater Installation',
+  'Bathroom Renovation',
+  'Drain Cleaning',
+  'Leak Detection',
+  'Shower Installation',
+  'Toilet Repairs',
+  'Kitchen Plumbing',
+  'Pipe Replacement'
+];
 
   get name() {
     return this.contactForm.get('name');
