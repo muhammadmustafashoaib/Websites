@@ -11,4 +11,5 @@ export class HeaderComponent {
   toggleNav() {
     this.navOpen = !this.navOpen;
   }
+  
 }
