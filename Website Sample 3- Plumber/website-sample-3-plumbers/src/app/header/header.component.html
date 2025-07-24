@@ -1,0 +1,30 @@
+<header class="bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 text-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a class="text-3xl font-bold tracking-tight hover:text-accent transition duration-300" routerLink="/">🔧 ProPlumb</a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wide">
+      <a routerLink="/" routerLinkActive="text-accent" class="hover:text-accent transition duration-200">Home</a>
+      <a routerLink="/services" routerLinkActive="text-accent" class="hover:text-accent transition duration-200">Services</a>
+      <a routerLink="/about" routerLinkActive="text-accent" class="hover:text-accent transition duration-200">About</a>
+      <a routerLink="/contact" routerLinkActive="text-accent" class="hover:text-accent transition duration-200">Contact</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <button class="md:hidden focus:outline-none" (click)="toggleNav()">
+      <svg class="h-6 w-6 fill-current text-white transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path *ngIf="!navOpen" d="M4 6h16M4 12h16M4 18h16" />
+        <path *ngIf="navOpen" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div *ngIf="navOpen" class="md:hidden bg-blue-900 px-6 pb-6 space-y-2 text-sm uppercase font-semibold tracking-wide text-white">
+    <a routerLink="/" (click)="toggleNav()" class="block py-2 border-b border-blue-800 hover:text-accent transition">Home</a>
+    <a routerLink="/services" (click)="toggleNav()" class="block py-2 border-b border-blue-800 hover:text-accent transition">Services</a>
+    <a routerLink="/about" (click)="toggleNav()" class="block py-2 border-b border-blue-800 hover:text-accent transition">About</a>
+    <a routerLink="/contact" (click)="toggleNav()" class="block py-2 hover:text-accent transition">Contact</a>
+  </div>
+</header>
