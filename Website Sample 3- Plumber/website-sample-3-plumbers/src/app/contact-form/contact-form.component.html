@@ -1,1 +1,40 @@
-<p>contact-form works!</p>
+<section id="contact" class="bg-slate-100 py-24 px-6">
+  <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12">
+    
+    <h2 class="text-4xl font-extrabold text-blue-900 mb-6 text-center">Contact Us</h2>
+    <p class="text-slate-600 mb-10 text-center text-lg">Have questions or need help? Send us a message and we'll get back to you shortly.</p>
+
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Name -->
+      <div class="col-span-1">
+        <label class="block mb-2 text-sm font-medium text-slate-700">Your Name</label>
+        <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Email -->
+      <div class="col-span-1">
+        <label class="block mb-2 text-sm font-medium text-slate-700">Email Address</label>
+        <input type="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Subject -->
+      <div class="col-span-2">
+        <label class="block mb-2 text-sm font-medium text-slate-700">Subject</label>
+        <input type="text" placeholder="Plumbing inquiry..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Message -->
+      <div class="col-span-2">
+        <label class="block mb-2 text-sm font-medium text-slate-700">Message</label>
+        <textarea rows="5" placeholder="Tell us how we can help..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="col-span-2 text-center">
+        <button type="submit" class="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition duration-300">
+          📩 Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
