@@ -1,29 +1,38 @@
-<section id="about" class="bg-white py-20 px-6">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    
+<section id="about" class="bg-gradient-to-b from-slate-50 to-white py-24 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
     <!-- Left: Image / Illustration -->
-    <div class="w-full md:w-1/2 animate-fade-in-left">
-      <img src="https://www.svgrepo.com/show/527935/pipe.svg" alt="About Us Plumbing" class="w-full max-w-md mx-auto drop-shadow-2xl" />
+    <div class="animate-fade-in-left">
+      <div class="relative group">
+        <img src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Us Plumbing"
+             class="w-full max-w-md mx-auto drop-shadow-2xl transform group-hover:scale-105 transition duration-300" />
+        <div class="absolute inset-0 rounded-3xl bg-blue-100 opacity-10 blur-xl -z-10"></div>
+      </div>
     </div>
 
-    <!-- Right: Text Content -->
-    <div class="w-full md:w-1/2 text-center md:text-left animate-fade-in-right">
-      <h2 class="text-4xl font-extrabold text-blue-900 mb-4">Who We Are</h2>
+    <!-- Right: Content -->
+    <div class="text-center md:text-left animate-fade-in-right">
+      <h2 class="text-5xl font-extrabold text-blue-900 leading-tight mb-6">
+        Meet <span class="text-blue-600">ProPlumb</span><br class="hidden md:block" />
+        Your Plumbing Pros
+      </h2>
       <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-        At <span class="font-semibold text-blue-700">ProPlumb Solutions</span>, we’re more than just plumbers — we're your home maintenance partners.
-        With over <span class="font-bold">20 years of experience</span>, our certified team has been helping thousands of families stay leak-free and stress-free.
+        We’re not just pipe-fixers — we’re peace-of-mind providers.
+        For over <span class="font-semibold text-blue-700">20 years</span>, our licensed experts have delivered
+        dependable plumbing backed by tech-forward solutions and heartfelt service.
       </p>
-      <ul class="space-y-3 text-slate-600 text-base">
-        <li>✅ 24/7 Emergency Support</li>
-        <li>✅ Licensed & Background-Checked Technicians</li>
-        <li>✅ Transparent Pricing with No Hidden Fees</li>
-        <li>✅ 1000+ 5-Star Reviews</li>
+
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-600 mb-8">
+        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✔</span> 24/7 Emergency Support</li>
+        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✔</span> Licensed Technicians</li>
+        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✔</span> Transparent Pricing</li>
+        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✔</span> 1000+ 5-Star Reviews</li>
       </ul>
-      <div class="mt-8">
-        <a href="#contact" class="bg-blue-700 text-white px-6 py-3 rounded-xl hover:bg-blue-800 transition duration-300">
-          Contact Us
-        </a>
-      </div>
+
+      <a href="#contact"
+         class="inline-block bg-blue-700 text-white px-7 py-3 rounded-full shadow-lg hover:bg-blue-800 transition-all duration-300">
+        📞 Contact Us
+      </a>
     </div>
   </div>
 </section>
