@@ -1,40 +1,74 @@
-<section id="contact" class="bg-slate-100 py-24 px-6">
-  <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12">
+<section id="contact" class="bg-white py-16 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
     
-    <h2 class="text-4xl font-extrabold text-blue-900 mb-6 text-center">Contact Us</h2>
-    <p class="text-slate-600 mb-10 text-center text-lg">Have questions or need help? Send us a message and we'll get back to you shortly.</p>
-
-    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Name -->
-      <div class="col-span-1">
-        <label class="block mb-2 text-sm font-medium text-slate-700">Your Name</label>
-        <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      </div>
-
-      <!-- Email -->
-      <div class="col-span-1">
-        <label class="block mb-2 text-sm font-medium text-slate-700">Email Address</label>
-        <input type="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      </div>
-
-      <!-- Subject -->
-      <div class="col-span-2">
-        <label class="block mb-2 text-sm font-medium text-slate-700">Subject</label>
-        <input type="text" placeholder="Plumbing inquiry..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      </div>
-
-      <!-- Message -->
-      <div class="col-span-2">
-        <label class="block mb-2 text-sm font-medium text-slate-700">Message</label>
-        <textarea rows="5" placeholder="Tell us how we can help..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-      </div>
-
-      <!-- Submit Button -->
-      <div class="col-span-2 text-center">
-        <button type="submit" class="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition duration-300">
-          📩 Send Message
+    <!-- Contact Form -->
+    <div class="md:col-span-2 bg-gray-100 p-8 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold mb-6 text-blue-900">Get In Touch</h2>
+      <form class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium mb-1">Full Name</label>
+          <input type="text" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="John Doe" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Service</label>
+          <select class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            <option value="">Select a Service</option>
+            <option value="leak">Leak Repair</option>
+            <option value="installation">Installation</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="emergency">Emergency Plumbing</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea rows="4" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg transition duration-300">
+          Send Message
         </button>
+      </form>
+    </div>
+
+    <!-- Info Card -->
+    <div class="bg-blue-900 text-white p-6 rounded-2xl shadow-xl space-y-4">
+      <h3 class="text-xl font-semibold">Contact Info</h3>
+      <p class="flex items-center"><svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884l8 8 8-8"/></svg>123 Main Street, Washington</p>
+      <p class="flex items-center"><svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884l8 8 8-8"/></svg>+1 1234 1234</p>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="hover:text-gray-300 transition"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22.675..."/></svg></a>
+        <a href="#" class="hover:text-gray-300 transition"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19.615..."/></svg></a>
+        <a href="#" class="hover:text-gray-300 transition"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.04..."/></svg></a>
+      <!-- Facebook -->
+<a href="https://facebook.com" target="_blank" class="hover:text-gray-300 transition">
+  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+    <path d="M22.675 0h-21.35C.595 0 0 .6 0 1.337v21.326C0 23.4.595 24 1.325 24h11.488v-9.294H9.69v-3.622h3.123V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.405 24 24 23.4 24 22.663V1.337C24 .6 23.405 0 22.675 0z"/>
+  </svg>
+</a>
+
+<!-- Twitter -->
+<a href="https://twitter.com" target="_blank" class="hover:text-gray-300 transition">
+  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.568-2.005.978-3.127 1.2-.897-.959-2.173-1.559-3.591-1.559-2.717 0-4.924 2.206-4.924 4.924 0 .39.045.765.127 1.124-4.09-.205-7.719-2.165-10.148-5.144-.424.729-.666 1.577-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.112-.849.171-1.296.171-.317 0-.626-.03-.928-.086.627 1.956 2.444 3.377 4.6 3.418-1.68 1.316-3.809 2.101-6.102 2.101-.396 0-.787-.023-1.174-.067 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14.002-7.496 14.002-13.986 0-.213-.005-.425-.014-.636.962-.694 1.8-1.56 2.46-2.548l-.047-.02z"/>
+  </svg>
+</a>
+
+<!-- Instagram -->
+<a href="https://instagram.com" target="_blank" class="hover:text-gray-300 transition">
+  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+    <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.342 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.342 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.342-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.849c.062-1.366.342-2.633 1.317-3.608.975-.975 2.242-1.255 3.608-1.317C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.773.127 4.625.362 3.672 1.316 2.719 2.27 2.484 3.418 2.427 4.698.012 8.332 0 8.741 0 12s.012 3.668.07 4.948c.057 1.28.292 2.428 1.245 3.382.953.953 2.101 1.188 3.381 1.245C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.28-.057 2.428-.292 3.382-1.245.953-.953 1.188-2.101 1.245-3.381C23.988 15.668 24 15.259 24 12s-.012-3.668-.07-4.948c-.057-1.28-.292-2.428-1.245-3.382-.953-.953-2.101-1.188-3.381-1.245C15.668.012 15.259 0 12 0z"/>
+    <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+    <circle cx="18.406" cy="5.595" r="1.44"/>
+  </svg>
+</a>
+
+      
       </div>
-    </form>
+      
+    </div>
+
   </div>
 </section>
