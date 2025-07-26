@@ -1,36 +1,205 @@
-<section class="relative bg-gradient-to-br from-blue-800 via-blue-900 to-slate-900 text-white overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+<section class="relative bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#020617] text-white overflow-hidden isolate">
+  <!-- Blurred Glow Backgrounds -->
+  <div class="absolute top-0 left-0 w-60 h-60 bg-cyan-500/30 rounded-full blur-[120px] z-0"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-[140px] z-0"></div>
 
-    <!-- ✅ Text Block -->
-    <div class="max-w-xl text-center md:text-left animate-fade-in-up">
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-400">Smart Plumbing</span> <br />
-        For Modern Homes
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-36 grid md:grid-cols-2 items-center gap-14">
+
+    <!-- ✅ Text Area -->
+    <div class="space-y-8 text-center md:text-left">
+      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Next-Gen Plumbing</span><br />
+        For Smart Homes
       </h1>
-      <p class="text-lg text-slate-300 mb-8">
-        Trusted by 5,000+ homeowners. Leak repairs, pipe installations, and same-day service — all in one place.
+      <p class="text-lg text-slate-300 max-w-lg mx-auto md:mx-0">
+        Real-time booking. Live tracking. 24/7 emergency repairs. Plumbing, reimagined for 2025 homeowners and offices.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-        <a href="#contact" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-cyan-300 hover:scale-105 transition">
-          Book a Plumber
+
+      <!-- ✅ Modern Feature Row -->
+      <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-medium text-slate-400">
+        <div class="bg-white/5 backdrop-blur-md px-4 py-2 rounded-full flex items-center gap-2">
+          <svg class="w-4 h-4 text-cyan-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.564-.955L10 0l2.948 5.955 6.564.955-4.756 4.635 1.122 6.545z"/></svg>
+          Rated 4.9/5 on Google
+        </div>
+        <div class="bg-white/5 backdrop-blur-md px-4 py-2 rounded-full flex items-center gap-2">
+          <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          Same-Day Guarantee
+        </div>
+        <div class="bg-white/5 backdrop-blur-md px-4 py-2 rounded-full flex items-center gap-2">
+          <svg class="w-4 h-4 text-yellow-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>
+          Live Booking Portal
+        </div>
+      </div>
+
+      <!-- ✅ CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
+        <a href="#contact" class="bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold shadow-md hover:scale-105 hover:bg-cyan-300 transition-all duration-300">
+          🚿 Book a Plumber
         </a>
-        <a href="#services" class="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-900 transition">
-          View Services
+        <a href="#services" class="border border-slate-200/30 text-slate-300 px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300">
+          Browse Services
         </a>
       </div>
+
+      <!-- ✅ Optional Contact -->
+      <p class="text-xs text-slate-400 mt-6">
+        💬 Need instant help? <a href="https://wa.me/923001234567" class="underline hover:text-cyan-300">Chat on WhatsApp</a> or call <a href="tel:+923001234567" class="underline hover:text-cyan-300">+92 300 1234567</a>
+      </p>
     </div>
 
-    <!-- ✅ Illustration Block -->
-    <div class="relative w-full md:w-[700px] animate-fade-in-down">
-      <img src="https://images.unsplash.com/photo-1632918572888-7a975f4b67b6?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plumber Illustration" class="w-full drop-shadow-2xl" />
-      <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-cyan-500/20 blur-3xl rounded-full z-[-1]"></div>
+    <!-- ✅ Visual / Image -->
+    <div class="relative animate-fade-in">
+      <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+        <img src="https://images.unsplash.com/photo-1632918572888-7a975f4b67b6?q=80&w=1080&auto=format&fit=crop" alt="Modern Plumber" class="w-full h-auto object-cover" />
+      </div>
+      <!-- Neon Outline Glow -->
+      <div class="absolute inset-0 rounded-3xl border border-cyan-500/40 blur-xl opacity-20"></div>
     </div>
   </div>
 
   <!-- ✅ Scroll Indicator -->
-  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-70">
     <div class="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-1">
       <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+    </div>
+  </div>
+</section>
+
+<section id="why-us" class="relative bg-[#0F172A] text-white py-24 px-6 overflow-hidden font-sans">
+  <!-- Glows -->
+  <div class="absolute -top-20 -left-20 w-96 h-96 bg-blue-500/20 blur-[160px] rounded-full z-0"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-[100px] rounded-full z-0"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto text-center">
+    <!-- ✨ Title -->
+    <h2 class="text-[2.75rem] sm:text-5xl font-bold tracking-tight leading-[1.1] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-6">
+      Why Homeowners Trust Us
+    </h2>
+    <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed tracking-wide mb-16">
+      Not your average plumbing service. We're a digital-first team delivering fast, smart, and spotless plumbing with style.
+    </p>
+
+    <!-- ⚡ Feature Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4">
+      <!-- Card Template -->
+      <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:shadow-xl hover:border-cyan-400/30 transition">
+        <div class="mb-4 text-cyan-400 group-hover:scale-110 transition">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold tracking-tight text-white mb-2">Verified Experts</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Each plumber is background-checked, insured, and tech-savvy — ready to serve with a smile.
+        </p>
+      </div>
+
+      <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:shadow-xl hover:border-yellow-400/30 transition">
+        <div class="mb-4 text-yellow-400 group-hover:scale-110 transition">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold tracking-tight text-white mb-2">Live Tracking</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Know exactly when we arrive. Track your plumber like you track your ride.
+        </p>
+      </div>
+
+      <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:shadow-xl hover:border-green-400/30 transition">
+        <div class="mb-4 text-green-400 group-hover:scale-110 transition">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 12H4"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold tracking-tight text-white mb-2">Same-Day Fix</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          No delays. Book by 12 PM, and your issue is solved by sundown — guaranteed.
+        </p>
+      </div>
+
+      <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:shadow-xl hover:border-pink-400/30 transition">
+        <div class="mb-4 text-pink-400 group-hover:scale-110 transition">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7m-9 9V3"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold tracking-tight text-white mb-2">No Hidden Fees</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          You see what you pay — no surprises. Honest quotes. Digital invoices.
+        </p>
+      </div>
+
+      <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:shadow-xl hover:border-red-400/30 transition">
+        <div class="mb-4 text-red-400 group-hover:scale-110 transition">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.93 4.93a10 10 0 0 1 14.14 0L12 12l-7.07-7.07z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold tracking-tight text-white mb-2">24/7 Emergency</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Burst pipe at 3 AM? We’re already on the way. Our emergency teams never sleep.
+        </p>
+      </div>
+
+      <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:shadow-xl hover:border-indigo-400/30 transition">
+        <div class="mb-4 text-indigo-400 group-hover:scale-110 transition">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 16l-4-4m0 0l4-4m-4 4h16"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold tracking-tight text-white mb-2">1-Tap Booking</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Just tap, schedule, and relax. We’ll handle the rest — zero phone calls needed.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="relative bg-[#0f172a] text-white py-24 px-6 overflow-hidden font-sans">
+  <!-- Background Glows -->
+  <div class="absolute -top-24 -left-24 w-[400px] h-[400px] bg-cyan-500/20 blur-[160px] rounded-full z-0"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/20 blur-[140px] rounded-full z-0"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto text-center">
+    <!-- Title -->
+    <h2 class="text-[2.5rem] sm:text-5xl font-bold tracking-tight leading-[1.2] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-8">
+      What Our Clients Say
+    </h2>
+    <p class="text-slate-400 text-base sm:text-lg mb-16 max-w-2xl mx-auto tracking-wide">
+      Real stories from real homeowners. We let our work — and our customers — do the talking.
+    </p>
+
+    <!-- Reviews Grid -->
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 px-4">
+      <!-- Single Review -->
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-md hover:shadow-xl transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full border border-cyan-400">
+          <div>
+            <h3 class="text-lg font-semibold text-white">Daniel M.</h3>
+            <p class="text-sm text-slate-400">Lahore</p>
+          </div>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          “Booked a plumber at 11am, fixed by 3pm — no calls, no hassle. Loved the live tracking and professional vibe.”
+        </p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-md hover:shadow-xl transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full border border-pink-400">
+          <div>
+            <h3 class="text-lg font-semibold text-white">Fatima K.</h3>
+            <p class="text-sm text-slate-400">Karachi</p>
+          </div>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          “The plumber arrived in a clean uniform, explained everything clearly, and left no mess. 10/10 experience.”
+        </p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-md hover:shadow-xl transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" class="w-12 h-12 rounded-full border border-yellow-400">
+          <div>
+            <h3 class="text-lg font-semibold text-white">Ahmed Z.</h3>
+            <p class="text-sm text-slate-400">Islamabad</p>
+          </div>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          “Emergency service at 2AM and they still showed up in 40 minutes. Who does that? Unreal reliability.”
+        </p>
+      </div>
     </div>
   </div>
 </section>
